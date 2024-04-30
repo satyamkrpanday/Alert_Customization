@@ -1,6 +1,4 @@
 /.terraform
 /.terraform.lock.hcl
-/Screenshot (726).png
-/Screenshot (727).png
-/Screenshot (728).png
 /terraform.tfstate
+provider.tf
