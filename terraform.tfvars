@@ -1,9 +1,9 @@
 my_loop = {
   "1" = {
 
-    account_id                     = 4267240
-    type                           = "static"
-    name                           = "alert_condition1"
+    account_id = 4267240
+    type       = "static"
+    name       = "alert_condition1"
     # description                    = "Time_Taking_Alert1"
     # runbook_url                    = "https://www.example.com"
     enabled                        = true
@@ -24,7 +24,7 @@ my_loop = {
       threshold_duration    = 300
       threshold_occurrences = "ALL"
     }
-warning_enabled=true
+    warning_enabled = true
     warning = {
       operator              = "above"
       threshold             = 25
@@ -34,9 +34,9 @@ warning_enabled=true
   }
 
   "2" = {
-    account_id                     = 4267240
-    type                           = "static"
-    name                           = "alert_condition2"
+    account_id = 4267240
+    type       = "static"
+    name       = "alert_condition2"
     # description                    = "Time_Taking_Alert2"
     # runbook_url                    = "https://www.example.com"
     enabled                        = true
@@ -57,14 +57,14 @@ warning_enabled=true
       threshold_duration    = 300
       threshold_occurrences = "ALL"
     }
-    warning_enabled=false
+    warning_enabled = false
     # warning = {
     #   operator              = "above"
     #   threshold             = 25
     #   threshold_duration    = 600
     #   threshold_occurrences = "ALL"
-    }
   }
+}
 #   "3" = {
 #     account_id                     = 4267240
 #     type                           = "static"

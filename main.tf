@@ -5,10 +5,10 @@ resource "newrelic_alert_policy" "my_policy" {
 resource "newrelic_nrql_alert_condition" "satyam_condition" {
   for_each = var.my_loop
 
-  account_id                     = each.value.account_id
-  policy_id                      = newrelic_alert_policy.my_policy.id
-  type                           = each.value.type
-  name                           = each.value.name
+  account_id = each.value.account_id
+  policy_id  = newrelic_alert_policy.my_policy.id
+  type       = each.value.type
+  name       = each.value.name
   # description                    = each.value.description
   # runbook_url                    = each.value.runbook_url
   enabled                        = each.value.enabled
@@ -51,5 +51,5 @@ resource "newrelic_nrql_alert_condition" "satyam_condition" {
       threshold_duration    = each.value.warning.threshold_duration
       threshold_occurrences = each.value.warning.threshold_occurrences
     }
-}
+  }
 }
